@@ -14,7 +14,18 @@
 		577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BF421BA8BA20083EB97 /* LaunchScreen.storyboard */; };
 		577E5BFF21BA8C3B0083EB97 /* userinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BFE21BA8C3B0083EB97 /* userinfo.json */; };
 		577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5C0021BA8C5C0083EB97 /* applstockinfo.json */; };
+		B7F4F060239775FB003154BC /* StocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F05F239775FB003154BC /* StocksTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7F4F062239775FB003154BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 577E5BE021BA8BA10083EB97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 577E5BE721BA8BA10083EB97;
+			remoteInfo = PeopleAndAppleStockPrices;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		577E5BE821BA8BA10083EB97 /* PeopleAndAppleStockPrices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleAndAppleStockPrices.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,20 @@
 		577E5BF721BA8BA20083EB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577E5BFE21BA8C3B0083EB97 /* userinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userinfo.json; sourceTree = "<group>"; };
 		577E5C0021BA8C5C0083EB97 /* applstockinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = applstockinfo.json; sourceTree = "<group>"; };
+		B7F4F05D239775FA003154BC /* StocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F4F05F239775FB003154BC /* StocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTests.swift; sourceTree = "<group>"; };
+		B7F4F061239775FB003154BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		577E5BE521BA8BA10083EB97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F4F05A239775FA003154BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				577E5BEA21BA8BA10083EB97 /* PeopleAndAppleStockPrices */,
+				B7F4F05E239775FB003154BC /* StocksTests */,
 				577E5BE921BA8BA10083EB97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				577E5BE821BA8BA10083EB97 /* PeopleAndAppleStockPrices.app */,
+				B7F4F05D239775FA003154BC /* StocksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +109,15 @@
 			path = json;
 			sourceTree = "<group>";
 		};
+		B7F4F05E239775FB003154BC /* StocksTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4F05F239775FB003154BC /* StocksTests.swift */,
+				B7F4F061239775FB003154BC /* Info.plist */,
+			);
+			path = StocksTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,18 +138,40 @@
 			productReference = 577E5BE821BA8BA10083EB97 /* PeopleAndAppleStockPrices.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B7F4F05C239775FA003154BC /* StocksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F4F066239775FB003154BC /* Build configuration list for PBXNativeTarget "StocksTests" */;
+			buildPhases = (
+				B7F4F059239775FA003154BC /* Sources */,
+				B7F4F05A239775FA003154BC /* Frameworks */,
+				B7F4F05B239775FA003154BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F4F063239775FB003154BC /* PBXTargetDependency */,
+			);
+			name = StocksTests;
+			productName = StocksTests;
+			productReference = B7F4F05D239775FA003154BC /* StocksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		577E5BE021BA8BA10083EB97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Pursuit;
 				TargetAttributes = {
 					577E5BE721BA8BA10083EB97 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					B7F4F05C239775FA003154BC = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 577E5BE721BA8BA10083EB97;
 					};
 				};
 			};
@@ -135,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				577E5BE721BA8BA10083EB97 /* PeopleAndAppleStockPrices */,
+				B7F4F05C239775FA003154BC /* StocksTests */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +207,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7F4F05B239775FA003154BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -164,7 +226,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7F4F059239775FA003154BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F4F060239775FB003154BC /* StocksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7F4F063239775FB003154BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 577E5BE721BA8BA10083EB97 /* PeopleAndAppleStockPrices */;
+			targetProxy = B7F4F062239775FB003154BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		577E5BEF21BA8BA10083EB97 /* Main.storyboard */ = {
@@ -338,6 +416,48 @@
 			};
 			name = Release;
 		};
+		B7F4F064239775FB003154BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDT827LK75;
+				INFOPLIST_FILE = StocksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amy.StocksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleAndAppleStockPrices.app/PeopleAndAppleStockPrices";
+			};
+			name = Debug;
+		};
+		B7F4F065239775FB003154BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDT827LK75;
+				INFOPLIST_FILE = StocksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Amy.StocksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleAndAppleStockPrices.app/PeopleAndAppleStockPrices";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +475,15 @@
 			buildConfigurations = (
 				577E5BFB21BA8BA20083EB97 /* Debug */,
 				577E5BFC21BA8BA20083EB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F4F066239775FB003154BC /* Build configuration list for PBXNativeTarget "StocksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F4F064239775FB003154BC /* Debug */,
+				B7F4F065239775FB003154BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
