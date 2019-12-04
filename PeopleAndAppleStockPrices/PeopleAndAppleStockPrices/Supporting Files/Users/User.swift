@@ -15,6 +15,7 @@ struct UserData: Decodable {
 struct User: Decodable  {
     let name: Name
     let location: Location
+    var fullName: String {return name.first + " " + name.last}
     
 }
 

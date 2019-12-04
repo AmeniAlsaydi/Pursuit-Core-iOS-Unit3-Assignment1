@@ -9,14 +9,32 @@
 import UIKit
 
 class UserViewController: UIViewController {
-
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    var users = [User]()
+    
+    var users = [User]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
+    var searchQuery = "" {
+        didSet {
+            let filename = "userinfo"
+            let ext = "json"
+            let data = Bundle.readRawJSONData(filename: filename, ext: ext)
+            
+            users = User.getUsers(from: data).sorted(by: {$0.name.first < $1.name.first}).filter {$0.fullName.lowercased().contains(searchQuery.lowercased())}
+
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         loadData()
+        searchBar.delegate = self
 
     }
     
@@ -26,10 +44,7 @@ class UserViewController: UIViewController {
         let data = Bundle.readRawJSONData(filename: filename, ext: ext)
         
         users = User.getUsers(from: data)
-        
-        //users = users.sort(by: {$0.})
-        
-        
+        users = users.sorted(by: {$0.name.first < $1.name.first})
     }
 
 }
@@ -52,6 +67,28 @@ extension UserViewController: UITableViewDataSource {
         
         return cell
     }
+    
+    
+}
+
+extension UserViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        // dismiss the keyboard
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        guard !searchText.isEmpty else {
+            loadData()
+            return
+        }
+        
+        searchQuery = searchText
+        
+    }
+    
     
     
 }

@@ -7,7 +7,6 @@
 //
 
 import XCTest
-// add @testable to get access to the json file 
 
 @testable import PeopleAndAppleStockPrices
 

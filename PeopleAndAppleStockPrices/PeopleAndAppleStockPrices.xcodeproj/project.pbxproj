@@ -17,6 +17,7 @@
 		B74F1A5023984109007B93AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F1A4F23984109007B93AD /* User.swift */; };
 		B74F1A52239845D6007B93AD /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F1A51239845D6007B93AD /* Bundle+Extension.swift */; };
 		B74F1A5423984798007B93AD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F1A5323984798007B93AD /* UserViewController.swift */; };
+		B74F1A5623985701007B93AD /* StocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F1A5523985701007B93AD /* StocksTests.swift */; };
 		B7F4F060239775FB003154BC /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4F05F239775FB003154BC /* UserTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		B74F1A4F23984109007B93AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B74F1A51239845D6007B93AD /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		B74F1A5323984798007B93AD /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		B74F1A5523985701007B93AD /* StocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTests.swift; sourceTree = "<group>"; };
 		B7F4F05D239775FA003154BC /* StocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F4F05F239775FB003154BC /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		B7F4F061239775FB003154BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				B7F4F05F239775FB003154BC /* UserTests.swift */,
+				B74F1A5523985701007B93AD /* StocksTests.swift */,
 				B7F4F061239775FB003154BC /* Info.plist */,
 			);
 			path = StocksTests;
@@ -250,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74F1A5623985701007B93AD /* StocksTests.swift in Sources */,
 				B7F4F060239775FB003154BC /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
