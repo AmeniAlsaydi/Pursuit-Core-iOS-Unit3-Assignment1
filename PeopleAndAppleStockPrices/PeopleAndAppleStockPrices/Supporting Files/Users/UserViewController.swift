@@ -46,6 +46,13 @@ class UserViewController: UIViewController {
         users = User.getUsers(from: data)
         users = users.sorted(by: {$0.name.first < $1.name.first})
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? UserDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("Couldnt get detailVC or indexPath")
+        }
+        detailVC.user = users[indexPath.row]
+    }
 
 }
 
@@ -63,7 +70,7 @@ extension UserViewController: UITableViewDataSource {
         let userAddress = "\(user.location.street) \(user.location.city), \(user.location.state) \(user.location.postcode)"
         
         cell.textLabel?.text = userName
-        cell.detailTextLabel?.text = userAddress
+        cell.detailTextLabel?.text = userAddress.capitalized
         
         return cell
     }
