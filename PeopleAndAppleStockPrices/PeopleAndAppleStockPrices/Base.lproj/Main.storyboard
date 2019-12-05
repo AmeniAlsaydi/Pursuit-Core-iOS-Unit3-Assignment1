@@ -167,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="2853.6231884057975" y="117.85714285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Stocks-->
         <scene sceneID="B1a-YT-HFv">
             <objects>
-                <viewController id="wC9-v5-aY2" sceneMemberID="viewController">
+                <viewController id="wC9-v5-aY2" customClass="StocksViewController" customModule="PeopleAndAppleStockPrices" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lco-Uv-zMX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,24 +179,24 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="ORx-S6-hp1" detailTextLabel="KsZ-fK-o9K" style="IBUITableViewCellStyleSubtitle" id="Okj-OV-DKZ">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" textLabel="ORx-S6-hp1" detailTextLabel="KsZ-fK-o9K" style="IBUITableViewCellStyleValue1" id="Okj-OV-DKZ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Okj-OV-DKZ" id="Eus-2z-QOY">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ORx-S6-hp1">
-                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KsZ-fK-o9K">
-                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KsZ-fK-o9K">
+                                                    <rect key="frame" x="335" y="12" width="59" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -215,7 +215,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9cz-PM-UL1"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FfH-Zs-VjI"/>
+                    <navigationItem key="navigationItem" title="Stocks" id="FfH-Zs-VjI"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ozx-Sh-tjy" id="gp8-9v-5nk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bIZ-mE-mkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -265,8 +268,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8kk-N3-yFG" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Stocks" image="arrow.up.right.square" catalog="system" id="2WF-bj-aeC"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ziP-vR-czc">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ziP-vR-czc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
