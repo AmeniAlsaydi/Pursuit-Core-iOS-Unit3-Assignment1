@@ -14,6 +14,7 @@
 		577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BF421BA8BA20083EB97 /* LaunchScreen.storyboard */; };
 		577E5BFF21BA8C3B0083EB97 /* userinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BFE21BA8C3B0083EB97 /* userinfo.json */; };
 		577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5C0021BA8C5C0083EB97 /* applstockinfo.json */; };
+		B7455A90239969CC0027F525 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7455A8F239969CC0027F525 /* Stocks.swift */; };
 		B74F1A5023984109007B93AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F1A4F23984109007B93AD /* User.swift */; };
 		B74F1A52239845D6007B93AD /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F1A51239845D6007B93AD /* Bundle+Extension.swift */; };
 		B74F1A5423984798007B93AD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F1A5323984798007B93AD /* UserViewController.swift */; };
@@ -42,6 +43,7 @@
 		577E5BF721BA8BA20083EB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577E5BFE21BA8C3B0083EB97 /* userinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userinfo.json; sourceTree = "<group>"; };
 		577E5C0021BA8C5C0083EB97 /* applstockinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = applstockinfo.json; sourceTree = "<group>"; };
+		B7455A8F239969CC0027F525 /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 		B74F1A4F23984109007B93AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B74F1A51239845D6007B93AD /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		B74F1A5323984798007B93AD /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
@@ -104,8 +106,9 @@
 			children = (
 				577E5C0221BA8C620083EB97 /* json */,
 				B74F1A4E2398406A007B93AD /* Users */,
-				577E5BF221BA8BA20083EB97 /* Assets.xcassets */,
+				B7455A8E239969990027F525 /* Stocks */,
 				577E5BEB21BA8BA10083EB97 /* AppDelegate.swift */,
+				577E5BF221BA8BA20083EB97 /* Assets.xcassets */,
 				B74F1A51239845D6007B93AD /* Bundle+Extension.swift */,
 				577E5BF421BA8BA20083EB97 /* LaunchScreen.storyboard */,
 			);
@@ -119,6 +122,14 @@
 				577E5C0021BA8C5C0083EB97 /* applstockinfo.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		B7455A8E239969990027F525 /* Stocks */ = {
+			isa = PBXGroup;
+			children = (
+				B7455A8F239969CC0027F525 /* Stocks.swift */,
+			);
+			path = Stocks;
 			sourceTree = "<group>";
 		};
 		B74F1A4E2398406A007B93AD /* Users */ = {
@@ -246,6 +257,7 @@
 			files = (
 				577E5BEE21BA8BA10083EB97 /* ViewController.swift in Sources */,
 				B74F1A5423984798007B93AD /* UserViewController.swift in Sources */,
+				B7455A90239969CC0027F525 /* Stocks.swift in Sources */,
 				B74F1A5823985A54007B93AD /* UserDetailViewController.swift in Sources */,
 				577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */,
 				B74F1A5023984109007B93AD /* User.swift in Sources */,
