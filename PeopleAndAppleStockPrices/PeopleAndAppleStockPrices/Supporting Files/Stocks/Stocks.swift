@@ -11,6 +11,7 @@ import Foundation
 struct Stock: Decodable {
     let date: String
     let uOpen: Double
+    let label : String
     
     // this is used to populate the table view
     static func getStocks(from data: Data) -> [Stock] {
@@ -24,4 +25,5 @@ struct Stock: Decodable {
         }
         return stocks
     }
+
 }
