@@ -87,6 +87,13 @@ class StocksViewController: UIViewController {
         let average = sum/Double(section.count)
         return average
     }
+    
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      guard let detailVC = segue.destination as? StocksDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+          fatalError("Couldnt get detailVC or indexPath")
+      }
+    detailVC.stock = stockInSections[indexPath.section][indexPath.row]
+  }
 }
 
 extension StocksViewController: UITableViewDataSource {
@@ -101,7 +108,7 @@ extension StocksViewController: UITableViewDataSource {
         
         let stock = stockInSections[indexPath.section][indexPath.row]
         
-        cell.textLabel?.text = stock.date
+        cell.textLabel?.text = stock.label
         cell.detailTextLabel?.text = stock.uOpen.description
         
         

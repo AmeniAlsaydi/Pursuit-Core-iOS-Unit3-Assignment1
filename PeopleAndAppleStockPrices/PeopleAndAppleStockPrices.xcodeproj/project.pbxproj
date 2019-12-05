@@ -16,6 +16,7 @@
 		577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5C0021BA8C5C0083EB97 /* applstockinfo.json */; };
 		B7455A90239969CC0027F525 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7455A8F239969CC0027F525 /* Stocks.swift */; };
 		B7455A92239972D80027F525 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7455A91239972D80027F525 /* StocksViewController.swift */; };
+		B7455A942399A13D0027F525 /* StocksDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7455A932399A13D0027F525 /* StocksDetailViewController.swift */; };
 		B74F1A5023984109007B93AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F1A4F23984109007B93AD /* User.swift */; };
 		B74F1A52239845D6007B93AD /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F1A51239845D6007B93AD /* Bundle+Extension.swift */; };
 		B74F1A5423984798007B93AD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F1A5323984798007B93AD /* UserViewController.swift */; };
@@ -46,6 +47,7 @@
 		577E5C0021BA8C5C0083EB97 /* applstockinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = applstockinfo.json; sourceTree = "<group>"; };
 		B7455A8F239969CC0027F525 /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
 		B7455A91239972D80027F525 /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
+		B7455A932399A13D0027F525 /* StocksDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksDetailViewController.swift; sourceTree = "<group>"; };
 		B74F1A4F23984109007B93AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B74F1A51239845D6007B93AD /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		B74F1A5323984798007B93AD /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				B7455A8F239969CC0027F525 /* Stocks.swift */,
+				B7455A932399A13D0027F525 /* StocksDetailViewController.swift */,
 				B7455A91239972D80027F525 /* StocksViewController.swift */,
 			);
 			path = Stocks;
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7455A942399A13D0027F525 /* StocksDetailViewController.swift in Sources */,
 				577E5BEE21BA8BA10083EB97 /* ViewController.swift in Sources */,
 				B74F1A5423984798007B93AD /* UserViewController.swift in Sources */,
 				B7455A90239969CC0027F525 /* Stocks.swift in Sources */,
