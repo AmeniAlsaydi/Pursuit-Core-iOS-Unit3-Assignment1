@@ -10,7 +10,7 @@ import UIKit
 
 class StocksDetailViewController: UIViewController {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var thumbLabel: UILabel!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var closeLabel: UILabel!
     @IBOutlet weak var openLabel: UILabel!
@@ -30,15 +30,15 @@ class StocksDetailViewController: UIViewController {
         
         if theStock.change > 0 {
             view.backgroundColor = .green
-            imageView.image = UIImage(named: "thumbsUp")
+            thumbLabel.text = "👍🏼"
         } else
         {
           view.backgroundColor = .red
-            imageView.image = UIImage(named: "thumbsDown")
+           thumbLabel.text = "👎🏼"
         }
-        date.text = theStock.label
-        openLabel.text = theStock.uOpen.description
-        closeLabel.text = theStock.uClose.description
+        date.text = "Date: \(theStock.label)"
+        openLabel.text = "Opening Price: \(theStock.uOpen)"
+        closeLabel.text = "Closing Price: \(theStock.uClose)"
         
     }
     
