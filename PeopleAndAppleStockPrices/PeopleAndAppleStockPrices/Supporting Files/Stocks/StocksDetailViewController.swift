@@ -27,8 +27,18 @@ class StocksDetailViewController: UIViewController {
         guard let theStock = stock else {
             fatalError("could get stock, check segue")
         }
+        
+        if theStock.change > 0 {
+            view.backgroundColor = .green
+            imageView.image = UIImage(named: "thumbsUp")
+        } else
+        {
+          view.backgroundColor = .red
+            imageView.image = UIImage(named: "thumbsDown")
+        }
         date.text = theStock.label
         openLabel.text = theStock.uOpen.description
+        closeLabel.text = theStock.uClose.description
         
     }
     

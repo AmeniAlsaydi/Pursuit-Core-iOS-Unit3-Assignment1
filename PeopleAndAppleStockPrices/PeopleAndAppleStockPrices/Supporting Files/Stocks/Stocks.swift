@@ -13,6 +13,7 @@ struct Stock: Decodable {
     let uOpen: Double
     let label: String
     let change: Double
+    let uClose: Double
     
     // this is used to populate the table view
     static func getStocks(from data: Data) -> [Stock] {
